@@ -1,0 +1,12 @@
+[user]
+	name = Thein Htut
+	email = theinhtut.dec@gmail.com
+[credential]
+	helper = cache --timeout=3600
+[pager]
+	branch = false
+[alias]
+	co = checkout
+	st = status
+[cola]
+	spellcheck = false
