@@ -98,9 +98,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Docker aliases
+alias dk='docker'
 # alias dkflush="docker rm $(docker ps -qaf status=exited)"
 alias dkflush="docker rm $(docker ps -aq --no-trunc)"
 alias dkflush2="docker rmi $(docker images --filter "dangling=true" -q --no-trunc)"
+alias dkrm='docker rm'
+alias dkrminone="docker image prune --filter='dangling=true'"
+
+# k8s aliases
+alias k='kubectl'
 
 # mkdir and cd to the directory makes easier
 mkcd () {
